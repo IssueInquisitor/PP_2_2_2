@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://thymeleaf.org ">
+<head>
+    <!--    <meta charset="UTF-8">-->
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+
+    <title>Cars</title>
+    <style>table th, table td {
+        padding: 5px;
+    }</style>
+
+</head>
+
+<body>
+
+<div>
+
+    <table border="1" align="center">
+        <tr bgcolor="#fffacd">
+            <th>Car brand</th>
+            <th>Car model</th>
+            <th>Number</th>
+        </tr>
+
+        <tr th:each="l : ${list}">
+            <td th:utext="${l.carBrand}">carBrand</td>
+            <td th:utext="${l.carModel}">carModel</td>
+            <td th:utext="${l.number}">number</td>
+        </tr>
+
+    </table>
+
+</div>
+</body>
+
+</html>
