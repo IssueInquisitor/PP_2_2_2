@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class CarsDAO {
+public class CarDao {
 
     private final List<Car> list;
 
